@@ -9,7 +9,10 @@ import pandas as pd
 
 
 # read csv, drop columns that we don't need for our model
-arr = pd.read_csv("example/exampleData.csv") # if you want relevant data you should run the parseCian.py and replace the csv name
+csvPath = "example/exampleData.csv"
+
+
+arr = pd.read_csv(csvPath, delimiter=";") # if you want relevant data you should run the parseCian.py and replace the csv name
 X = arr.drop(columns=["price_per_month", "author", "url", "location", "deal_type", "accommodation_type", "floor", "floors_count", "commissions", "street", "house_number"])
 y = arr[["price_per_month"]]
 
