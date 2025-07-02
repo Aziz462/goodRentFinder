@@ -9,7 +9,7 @@ import pandas as pd
 
 
 # read csv, drop columns that we don't need for our model
-csvPath = "example/exampleData.csv"
+csvPath = "example/example.csv"
 
 
 arr = pd.read_csv(csvPath, delimiter=";") # if you want relevant data you should run the parseCian.py and replace the csv name
